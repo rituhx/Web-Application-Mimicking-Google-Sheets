@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Spreadsheet</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <h1>Advanced Spreadsheet</h1>
+    <div id="toolbar">
+        <button id="bold">Bold</button>
+        <button id="italic">Italic</button>
+        <button id="increase-font">Increase Font</button>
+        <button id="decrease-font">Decrease Font</button>
+        <input type="color" id="color-picker" value="#000000">
+    </div>
+    <div id="controls">
+        <button id="add-row">Add Row</button>
+        <button id="add-column">Add Column</button>
+        <button id="delete-row">Delete Row</button>
+        <button id="delete-column">Delete Column</button>
+    </div>
+    <div id="operations">
+        <button id="sum">SUM</button>
+        <button id="subtract">SUBTRACT</button>
+        <button id="average">AVERAGE</button>
+        <button id="count">COUNT</button>
+        <button id="product">PRODUCT</button>
+        <button id="median">MEDIAN</button>
+    </div>
+    <div id="data-quality">
+        <button id="trim">TRIM</button>
+        <button id="upper">UPPER</button>
+        <button id="lower">LOWER</button>
+        <button id="remove-duplicates">REMOVE DUPLICATES</button>
+        <button id="find-replace">FIND & REPLACE</button>
+    </div>
+    <div id="formula-bar">
+        <input type="text" id="formula-input" placeholder="Enter formula here">
+    </div>
+    <div id="result-display">
+        <strong>Result:</strong> <span id="result-value"></span>
+    </div>
+    <table id="spreadsheet">
+        <thead>
+            <tr>
+                <th></th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="extra-features">
+        <button id="save">Save Spreadsheet</button>
+        <button id="load">Load Spreadsheet</button>
+        <button id="create-chart">Create Chart</button>
+    </div>
+    <canvas id="chart" width="400" height="200"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
